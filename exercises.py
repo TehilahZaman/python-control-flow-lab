@@ -37,7 +37,7 @@ def calculate_dog_years():
     
     for age in range(1, dog_age + 1):
         if (age <= 2):
-            total_dog_age = age * 10
+            dog_years = age * 10
         else: 
             dog_years = 20 + (dog_age - 2) * 7   
     
