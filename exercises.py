@@ -34,18 +34,14 @@ check_voting_eligibility()
 # Exercise 3: Calculate Dog Years
 def calculate_dog_years():
     dog_age = int(input("Enter your dog's age "))
-
-    if dog_age == 1:
-        dog_years = 10
-    elif dog_age == 2:
-        dog_years = 20
-    elif dog_age > 2: 
-        dog_years = 20 + (dog_age - 2) * 7
-    else:
-        print("Not valid")
-        return     
     
-    print(f"Your god is {dog_years} years old in human years")
+    for age in range(1, dog_age + 1):
+        if (age <= 2):
+            total_dog_age = age * 10
+        else: 
+            dog_years = 20 + (dog_age - 2) * 7   
+    
+    print(f"Your dog is {dog_years} years old in dog years")
 
 calculate_dog_years()
 
